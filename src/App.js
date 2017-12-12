@@ -57,10 +57,9 @@ class App extends Component {
       <div className="App">
         <Header/>
         <Container>
-        <Row>
-          
-          <Race/>
-        </Row>
+          <Row>
+            <Race/>
+          </Row>
         </Container>
       </div>
     );
