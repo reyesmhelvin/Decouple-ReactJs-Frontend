@@ -6,17 +6,20 @@ import Header from './Header'
 import Footer from './Footer'
 
 class App extends Component {
+
   constructor() {
     super();
     this.state = {
       events: []
     }
   }
+
   async componentDidMount() {
     this.setState({
       events: await getEvents()
     })
   }
+
   render() {
     const Race = () => {
       return this.state.events.map((event) => (
@@ -39,6 +42,7 @@ class App extends Component {
         </Col>
       ))
     }
+
     return (
       <div className="App">
         <Header logoname="raceyaya"/>
@@ -51,6 +55,7 @@ class App extends Component {
       </div>
     );
   }
+  
 }
 
 export default App;
